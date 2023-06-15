@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr = [-12, 45, -45, -3, 2, 78, -54, 34, 23, 67];
+    let max = arr[0];
+    let c = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i]
+        }
+        c += arr[i]
+    }
+    // for (let i = 0; i < arr.length; i++) {
+    //       c += arr[i]
+    // }
+
+    document.write(max + ' la so lon nhat.' + ' Trung binh cac so trong mang: ' + c / arr.length);
+</script>
