@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  let a = +prompt('Nhap do dai hang va cot cua mang: ')
+  let c1 = 0
+  let c2 = 0
+
+  let arr = []
+  for (let i = 0; i < a; i++) {
+    arr[i] = [];
+    for (let j = 0; j < a; j++) {
+      arr[i][j] = +prompt('Nhap vao phan tu cua mang: ')
+      document.write(arr[i][j] + ' ')
+      if (i===j){
+        c1 += arr[i][j]
+      } if ((i+j) === a-1) {
+        c2 += arr[i][j]
+      }
+    } document.write('<br>')
+  }
+  let c = c1 + c2;
+  document.write()
+  document.write('Tong 2 duong cheo chinh la: ' + c );
+</script>
+</html>
