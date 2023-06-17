@@ -8,23 +8,20 @@
 
 </body>
 <script>
-  let n = prompt('Nhập độ dài mảng: ')
-  let arr =[]
-  let c
-  for (let i = 0; i < n; i++) {
-    c = prompt('Nhập vào phần tử thứ ' + i);
-    arr.push(c)
+    let arr = [4, 6, 4, 3, 2, 1, 7, 9, 5, 12]
+    document.write(arr)
+    let d = prompt('Nhap vao so V can tim: ')
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == d) {
+            for (let j = i; j < arr.length; j++) {
+                arr[j] = arr[j + 1]
+            }
+            arr[arr.length - 1] = 0
 
-  } console.log(arr)
-  let d = prompt('Nhap vao so V can tim: ')
-  let flag = false;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === d) {
-      flag = true
+        }
     }
-  }
-  if (flag) {
+    document.write('<br>' + arr)
 
-  }
+
 </script>
 </html>
