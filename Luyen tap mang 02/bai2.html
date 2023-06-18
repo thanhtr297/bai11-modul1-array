@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ai2</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let x =  [ 'c', 's', 'c', '2', '6', '1' ];
+    // let x = a.join(',')
+    // console.log(a.slice(','))
+    // for (let i = 0; i < b.length; i++) {
+    //
+    // }
+    let first = 0;
+    let last = x.length - 1;
+    while (first<last) {
+        let b = x[first];
+        x[first] = x[last];
+        x[last] = b;
+        first++;
+        last--;
+    }
+
+    console.log(x.join(''))
+</script>

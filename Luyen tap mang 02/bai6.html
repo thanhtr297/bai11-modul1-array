@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a = prompt('nhập mảng')
+    let array = a.split('')
+    let b = []
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === '-') {
+            array[i] = '_'
+
+        }
+        b.push(array[i])
+    }
+    console.log(b)
+</script>

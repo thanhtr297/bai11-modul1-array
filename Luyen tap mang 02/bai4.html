@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a = '2312984-20985asdgf';
+    let b = a.split('');
+    console.log(b);
+
+    let dem = 0;
+    for (let i = 0; i < b.length; i++) {
+        if (isNaN(b[i]) === false) {
+            dem += 1;
+        }
+    }
+    console.log(dem);
+</script>
